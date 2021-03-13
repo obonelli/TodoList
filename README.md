@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 Final results:
-<a target="_blank" rel="noopener noreferrer" href="/img/example_todoList.png">
-<img src="/img/example_todoList.png" alt="" style="max-width:100%;">imagen</a>
+<a target="_blank" rel="noopener noreferrer" href="example_todoList.png">
+<img src="example_todoList.png" alt="" style="max-width:100%;">Imagen</a>
 
 ## Available Scripts
 
