@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Final results:
 <a target="_blank" rel="noopener noreferrer" href="/img/example_todoList.png">
-<img src="/img/example_todoList.png" alt="" style="max-width:100%;"></a>
+<img src="/img/example_todoList.png" alt="" style="max-width:100%;">imagen</a>
 
 ## Available Scripts
 
