@@ -26,12 +26,34 @@ const todoSlice = createSlice({
                     }
                 }
             })
-        }
+        },
+        deleteTodo: (state, action) => {
+            //return state.todoList.filter((elm) => elm.item !== action.payload.item)
+            //return state.todoList.filter(element => element !== action.payload);
+            state.todoList.map(item => {
+                if (action.payload === item.id) {
+                    if (item.done === true) {
+                        return item.item = [];
+                        //return state.todoList(action.payload.item) = [];
+                        //return state.todoList;
+                        //return state.todoList = []
+                        //return state.todoList.slice(item.id)
+                        // return state.todoList.filter((elm) => elm !== action.payload)
+                        //return state.todoList = []
+                        //return item = {}
+                        //item.item = 'si'
+                    } else {
+
+                    }
+
+                }
+            })
+        },
     }
 });
 
 export const {
-    saveTodo, setCheck
+    saveTodo, setCheck, deleteTodo
 } = todoSlice.actions
 
 export const selectTodoList = state => state.todos.todoList
