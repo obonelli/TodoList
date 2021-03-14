@@ -7,7 +7,7 @@ import { deleteTodo } from '../features/todoSlice'
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-const Todoitem = ({ name, done, id }) => {
+const Todoitem = ({ name, done, id, status }) => {
     const [deleteid, setdeleteid] = useState('')
 
     const dispatch = useDispatch()
@@ -17,6 +17,7 @@ const Todoitem = ({ name, done, id }) => {
 
     const handleDelete = () => {
         dispatch(deleteTodo(id))
+
     }
 
     return (

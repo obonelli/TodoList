@@ -28,19 +28,26 @@ const todoSlice = createSlice({
             })
         },
         deleteTodo: (state, action) => {
-            //return state.todoList.filter((elm) => elm.item !== action.payload.item)
-            //return state.todoList.filter(element => element !== action.payload);
             state.todoList.map(item => {
                 if (action.payload === item.id) {
                     if (item.done === true) {
-                        return item.item = [];
-                        //return state.todoList(action.payload.item) = [];
-                        //return state.todoList;
+                        //state.todoList.filter((elm) => elm.id !== action.payload)
+                        state.todoList.filter((elm) => { console.log(elm) })
+
+
+                        //state.todoList = []
+                        //state.todoList.filter((elm) => elm !== action.payload)
+                        //return state.filter(({ id }) => id !== action.payload)
+                        //return item.status = 0;
+                        //return state.filter(item.id !== action.payload)
+                        // return state.todoList.filter((item) => item.id == action.payload);
+
+                        //return state.todoList[0] = [];
+                        // state.todos.filter((item) => item.id !== id);
+                        // return state.todoList
+                        // setTodoList(todoList);
+                        // return item.item = [];
                         //return state.todoList = []
-                        //return state.todoList.slice(item.id)
-                        // return state.todoList.filter((elm) => elm !== action.payload)
-                        //return state.todoList = []
-                        //return item = {}
                         //item.item = 'si'
                     } else {
 
