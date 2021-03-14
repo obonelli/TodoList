@@ -31,8 +31,9 @@ const todoSlice = createSlice({
             state.todoList.map(item => {
                 if (action.payload === item.id) {
                     if (item.done === true) {
-                        //state.todoList.filter((elm) => elm.id !== action.payload)
-                        state.todoList.filter((elm) => { console.log(elm) })
+                        state.todoList = state.todoList.filter((elm) => elm.id !== action.payload)
+
+                        //state.todoList.filter((elm) => { console.log(elm) })
 
 
                         //state.todoList = []
